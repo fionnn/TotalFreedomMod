@@ -202,7 +202,16 @@ public class Command_glist extends FreedomCommand
                 return true;
             default:
                 return false;
+          // kicks people on ips etc
+                       if (player != null)
+        {
+            player.kickPlayer(ban.bakeKickMessage(Ips.getIp(player)));
+            for (Player p : Bukkit.getOnlinePlayers())
+            {
+                if (Ips.getIp(p).equals(Ips.getIp(player)))
+                {
+                    p.kickPlayer(ChatColor.RED + "You've been kicked because someone on your IP has been banned.");
+                }
+            }
         }
-    }
-}
 
