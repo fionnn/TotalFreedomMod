@@ -264,7 +264,7 @@ public class ItemFun extends FreedomService
                 event.setCancelled(true);
                 break;
             }
-
+// bru
             case SUGAR:
             {
                 if (!fPlayer.isMP44Armed())
