@@ -265,7 +265,7 @@ public class ItemFun extends FreedomService
                 break;
             }
 
-            case GUNPOWDER:
+            case SUGAR:
             {
                 if (!fPlayer.isMP44Armed())
                 {
