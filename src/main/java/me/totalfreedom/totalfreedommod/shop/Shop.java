@@ -70,9 +70,7 @@ public class Shop extends FreedomService
                     reactionString = FUtil.randomString(ConfigEntry.SHOP_REACTIONS_STRING_LENGTH.getInteger());
                     for (Player player : server.getOnlinePlayers())
                     {
-                        String reactionMessage = ChatColor.DARK_GRAY + "[" + ChatColor.YELLOW + "Reaction" + ChatColor.DARK_GRAY + "] "
-                                + ChatColor.AQUA + "Hover over this message or click on it and type the "
-                                + ChatColor.AQUA + "string to win " + ChatColor.GOLD + plugin.sh.coinsPerReactionWin + ChatColor.AQUA + " coins!";
+                        String reactionMessage = ChatColor.DARK_GRAY + "[" + ChatColor.YELLOW + "Reaction" + ChatColor.DARK_GRAY + "] " + ChatColor.AQUA + "Hover over this message or click on it and type the " + ChatColor.AQUA + "string to win " + ChatColor.GOLD + plugin.sh.coinsPerReactionWin + ChatColor.AQUA + " coins!";
                         JSONMessage.create(reactionMessage)
                                 .tooltip(ChatColor.DARK_AQUA + reactionString)
                                 .runCommand("/reactionbar")
