@@ -33,7 +33,7 @@ public class CommandBlockerEntry
         this.action = action;
         this.command = command;
         this.subCommand = ((subCommand == null) ? null : subCommand.toLowerCase().trim());
-        this.message = ((message == null || message.equals("_")) ? "That command is blocked." : message);
+        this.message = ((message == null || message.equals("_")) ? ChatColor.DARK_RED + "You do not have acces to that command." : message);
     }
 
     public void doActions(CommandSender sender)
